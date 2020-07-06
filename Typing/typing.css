@@ -1,0 +1,24 @@
+* {
+    background-color: khaki;
+}
+
+div {
+    font-family: roboto;
+    max-width: 50%;
+    margin: 140px auto;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.cursor {
+    opacity: 0;
+    transition: .0.5s;
+}
+
+.cursor.active {
+    opacity: 5;
+}
+
+span.text {
+    background-color: coral;
+}

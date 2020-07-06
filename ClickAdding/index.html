@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            display: block;
+            margin: 10px auto;
+        }
+        
+        div {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            margin: 5px;
+            float: left;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border: 2px solid black;
+        }
+        
+        .circles {
+            background-color: white;
+            border-radius: 50%;
+            color: black;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Add Element</button>
+
+    <script>
+        const btn = document.querySelector("button")
+        let number = 1;
+
+
+
+        const addElement = function() {
+            const firstElement = document.createElement('div');
+            firstElement.textContent = number;
+
+
+            if (number % 5 == 0) {
+                firstElement.classList.add("circles")
+            }
+            document.body.appendChild(firstElement);
+            number++;
+            activeNumber++;
+        }
+        btn.addEventListener("click", addElement)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+body {
+    margin: 5vw;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: cadetblue;
+    border: 2px solid black;
+}
+
+label,
+input {
+    height: 34px;
+    line-height: 60px;
+    font-size: 30px;
+    border: 1px solid black;
+    background-color: grey;
+    color: blanchedalmond;
+}
+
+div {
+    border: 2px solid black;
+    font-size: 40px;
+    margin: 20px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            font-size: 20px;
+        }
+        
+        .bigger {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Add element to list</button>
+    <ul>
+    </ul>
+    <script>
+        let number = 1;
+        const btn = document.querySelector("button");
+        btn.addEventListener("click", function() {
+            const listElement = document.createElement("li");
+            listElement.textContent = number;
+            const list = document.querySelector("ul");
+            list.appendChild(listElement);
+
+
+            if (number % 3 == 0) {
+                listElement.classList.add("bigger")
+            }
+            number += 2;
+
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+body {
+    height: 1000vh;
+}
+
+div {
+    position: fixed;
+    background-color: darkslateblue;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
