@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    background-color: aquamarine;
+}
+
+.time {
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 60px;
+    text-align: center;
+    font-family: monospace;
+}
+
+button {
+    font-size: 44px;
+    margin: 30px;
+    border: 2px solid blue;
+    margin-left: 300px;
+
+}
